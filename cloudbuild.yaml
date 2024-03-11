@@ -12,20 +12,7 @@ steps:
   #logging: REGIONAL_USER_OWNED_BUCKET
   
 
-  # Deploy the container to Google Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: 'gcloud'
-    args:
-      - 'run'
-      - 'deploy'
-      - 'devops-lab2'
-      - '--image'
-      - 'us-central1-docker.pkg.dev/decisive-coda-401820/kiran-100853913/devops-lab2:$COMMIT_SHA'
-      - '--region'
-      - 'us-central1'
-      - '--platform'
-      - 'managed'
-      - '--allow-unauthenticated' # Use '--no-allow-unauthenticated' if you don't want to allow unauthenticated access
+ 
 
 # options:
 #   # Set logs bucket behavior to create a user-owned logs bucket in the same region as the build project
@@ -34,6 +21,6 @@ steps:
 
 
 images:
-  - 'us-central1-docker.pkg.dev/lab1-412323/shijin-100913453/devops-lab2:$COMMIT_SHA'
-  - 'us-central1-docker.pkg.dev/lab1-412323/shijin-100913453/devops-lab2:$COMMIT_SHA'
+  - 'us-central1-docker.pkg.dev/decisive-coda-401820/kiran-100853913/devops-lab2:$COMMIT_SHA'
+
 
