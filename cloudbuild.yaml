@@ -12,13 +12,9 @@ steps:
   #logging: REGIONAL_USER_OWNED_BUCKET
   
 
- 
-
 # options:
 #   # Set logs bucket behavior to create a user-owned logs bucket in the same region as the build project
 #   logging: 'febin-log'
-
-
 
 images:
   - 'us-central1-docker.pkg.dev/decisive-coda-401820/kiran-100853913/devops-lab2:$COMMIT_SHA'
