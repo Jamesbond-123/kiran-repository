@@ -21,7 +21,7 @@ steps:
     entrypoint: 'gcloud'
     args:
       - 'run'
-      - 'deploy'-
+      - 'deploy'
       - 'devops-lab2'
       - '--image'
       - 'us-central1-docker.pkg.dev/decisive-coda-401820/kiran-100853913/devops-lab2:$COMMIT_SHA'
